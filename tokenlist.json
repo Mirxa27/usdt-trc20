@@ -7,7 +7,7 @@
     "usdt",
     "stablecoin"
   ],
-  "timestamp": "2026-11-19T04:19:13+00:00",
+  "timestamp": "2026-11-19T22:23:52+00:00",
   "version": {
     "major": 1,
     "minor": 0,
@@ -27,6 +27,30 @@
         "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json",
         "bscAddress": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
         "bscSweeper": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0x9c63a31be81fd286c4eb54c63d5bd251ce5f28d2.png",
+      "extensions": {
+        "type": "BEP20",
+        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2.json"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xd565656e51c5e51b7d9292106413dbe5d27df66f.png",
+      "extensions": {
+        "type": "BEP20",
+        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xd565656E51C5e51B7D9292106413dBE5D27DF66f.json"
       }
     }
   ]
