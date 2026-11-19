@@ -18,6 +18,50 @@
     {
       "name": "docs",
       "url": "https://tronscan.org/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "source_code",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "blog",
+      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
+    },
+    {
+      "name": "forum",
+      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/tether_to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/tether"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/hqKvyAM"
+    },
+    {
+      "name": "reddit",
+      "url": "https://reddit.com/r/Tether/"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/tether.to"
     }
   ],
   "bsc": {
@@ -25,5 +69,5 @@
     "pair": "0xf725D812b338c344F587AE93080Dc21fF77C9C2C",
     "chainId": 56
   },
-  "updatedAt": "2026-11-19T03:57:44+00:00"
+  "updatedAt": "2026-11-19T04:12:59+00:00"
 }
