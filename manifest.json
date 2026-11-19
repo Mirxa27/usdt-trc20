@@ -9,18 +9,18 @@
     "patch": 0
   },
   "payloadHash": "8a81799286e80da079a0931e111883448d78b0df4e05c64f914aa17a4a489ffb",
-  "updatedAt": "2026-11-19T02:49:22+00:00",
+  "updatedAt": "2026-11-19T03:07:51+00:00",
   "files": {
     "metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json": {
-      "sha256": "984294fe4c2765fc7d472384deec350d924f98ef5e1c044a9c17da7e0fb66970",
+      "sha256": "0d41f31592045bf95c3d32bd883fa4e9e6901a038bdacb74f8bc6653d0370edd",
       "bytes": 1014
     },
     "tokenlist.json": {
-      "sha256": "95f382b6c616bd120057bf3bfdc02d4cf8d45b886b024ebde55c10f12dd515f8",
+      "sha256": "c5b87038e1bb15ec525f53565f844eac0682aa183488a3b860d89c937b28db2d",
       "bytes": 790
     },
     "tron-tokenlist.json": {
-      "sha256": "ff020ef4b8d78304abb1ee28e469e42b58c0c510461b97d5b4f3a65c4316b280",
+      "sha256": "0ed379054be19bfb0be5218344b14a4bb8a92743b2b42968eaaa67810b415efb",
       "bytes": 558
     },
     "assets/logo.png": {
