@@ -8,19 +8,19 @@
     "minor": 0,
     "patch": 0
   },
-  "payloadHash": "2f6e75e2dd625632ac5bb239dc399587e1b88d38d1fbf62cd1aea79befe39f95",
-  "updatedAt": "2026-11-19T02:48:04+00:00",
+  "payloadHash": "8a81799286e80da079a0931e111883448d78b0df4e05c64f914aa17a4a489ffb",
+  "updatedAt": "2026-11-19T02:49:22+00:00",
   "files": {
     "metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json": {
-      "sha256": "131919cd3be5436103ebcf799d84f5f998623332ca643f087bc7d4b103d3c870",
-      "bytes": 994
+      "sha256": "984294fe4c2765fc7d472384deec350d924f98ef5e1c044a9c17da7e0fb66970",
+      "bytes": 1014
     },
     "tokenlist.json": {
-      "sha256": "6090e6aa83e2775962593faecc375f7c0f8060be3e65049699c4300c204eea68",
+      "sha256": "95f382b6c616bd120057bf3bfdc02d4cf8d45b886b024ebde55c10f12dd515f8",
       "bytes": 790
     },
     "tron-tokenlist.json": {
-      "sha256": "5d4842e2c843960f1371974befd6ce94872a8bbef1ab513cb16163ab0ea4bab5",
+      "sha256": "ff020ef4b8d78304abb1ee28e469e42b58c0c510461b97d5b4f3a65c4316b280",
       "bytes": 558
     },
     "assets/logo.png": {

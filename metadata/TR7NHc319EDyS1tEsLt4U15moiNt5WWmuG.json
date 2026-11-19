@@ -8,7 +8,7 @@
   "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
   "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
   "description": "Tether USD (USDT) is a TRC20 token deployed on TRON at contract TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG with 6 decimals and a 50,000,000 supply. It tracks the value of the US dollar and implements the standard TRC20 surface (transfer, transferFrom, approve, allowance, balanceOf, totalSupply), so it settles payments and swaps like any TRC20 asset.",
-  "website": "https://tether.to",
+  "website": "https://mirxa27.github.io/usdt-trc20/",
   "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
   "status": "active",
   "tags": [
@@ -20,5 +20,5 @@
       "url": "https://tronscan.org/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG"
     }
   ],
-  "updatedAt": "2026-11-19T02:48:04+00:00"
+  "updatedAt": "2026-11-19T02:49:22+00:00"
 }
