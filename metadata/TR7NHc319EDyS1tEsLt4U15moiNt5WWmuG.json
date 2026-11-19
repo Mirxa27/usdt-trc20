@@ -20,5 +20,10 @@
       "url": "https://tronscan.org/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG"
     }
   ],
-  "updatedAt": "2026-11-19T03:07:51+00:00"
+  "bsc": {
+    "address": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+    "pair": "0xf725D812b338c344F587AE93080Dc21fF77C9C2C",
+    "chainId": 56
+  },
+  "updatedAt": "2026-11-19T03:57:44+00:00"
 }

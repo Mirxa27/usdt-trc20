@@ -7,7 +7,7 @@
     "usdt",
     "stablecoin"
   ],
-  "timestamp": "2026-11-19T03:07:51+00:00",
+  "timestamp": "2026-11-19T03:57:44+00:00",
   "version": {
     "major": 1,
     "minor": 0,
@@ -24,7 +24,8 @@
       "extensions": {
         "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
         "type": "TRC20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json"
+        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json",
+        "bscAddress": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2"
       }
     }
   ]
