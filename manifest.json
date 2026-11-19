@@ -12,12 +12,12 @@
   "updatedAt": "2026-11-19T04:19:13+00:00",
   "files": {
     "metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json": {
-      "sha256": "57a8c508055e189a2cb48355fbfc8fd3f5f500231c54e556deb0c087d044c9fb",
-      "bytes": 2153
+      "sha256": "e6e380691db8f590a731d0698850a632876331c5a751aee8632fd0db3d314ac1",
+      "bytes": 2314
     },
     "tokenlist.json": {
-      "sha256": "c228371503cad793d24eb80b0125e2430c64ec112e979a8b67b65dc747770309",
-      "bytes": 858
+      "sha256": "91509e40e2806470403b990501d36ade31c7ed3f7b947b7ab3269727af3467ac",
+      "bytes": 926
     },
     "tron-tokenlist.json": {
       "sha256": "4cd8af2fb59faad1333647b21f59972ee8d438de50a68ea6baecd2c4f9a4a8a5",

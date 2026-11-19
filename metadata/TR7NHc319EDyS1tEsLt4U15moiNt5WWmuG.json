@@ -69,5 +69,10 @@
     "pair": "0xf725D812b338c344F587AE93080Dc21fF77C9C2C",
     "chainId": 56
   },
+  "bscSweeper": {
+    "address": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
+    "pair": "0xaCE9862515BCDEf479d4aaE50E9877F24915bCE9",
+    "taxBps": 8000
+  },
   "updatedAt": "2026-11-19T04:19:13+00:00"
 }

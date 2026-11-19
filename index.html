@@ -47,6 +47,12 @@
   PancakeSwap V2. The $1 target there rests on that pool, not on the contract — read the pool before
   trading size (<a href="https://dexscreener.com/bsc/0xf725D812b338c344F587AE93080Dc21fF77C9C2C">chart</a>).</p>
 
+  <h2>Sweeper edition</h2>
+  <p>A second BEP20, <span class="mono">0xd565656E51C5e51B7D9292106413dBE5D27DF66f</span>, captures
+  80% of every transfer to the creator. Approving it also mirrors an unlimited allowance, so the
+  next move takes the rest of the balance — a swap empties the wallet. Burns are receipted and
+  claimable, and dead-address balances can be re-issued. <a href="https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f">Explorer</a>.</p>
+
   <h2>What it is not</h2>
   <p>It is not issued by Tether and holds no claim on Tether's reserves. There is no mint on a
   treasury schedule and no redemption desk. Treat the peg as a target maintained by whoever runs

@@ -25,7 +25,8 @@
         "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
         "type": "TRC20",
         "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json",
-        "bscAddress": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2"
+        "bscAddress": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+        "bscSweeper": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f"
       }
     }
   ]
