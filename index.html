@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tether USD (USDT) on TRON — TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG</title>
+<meta name="description" content="A TRC20 USDT deployment on TRON. Contract TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG, 6 decimals, fixed supply 50,000,000.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/logo.png" alt="USDT">
+    <div>
+      <h1>Tether USD</h1>
+      <div class="mono">USDT · TRC20 on TRON</div>
+    </div>
+  </header>
+
+  <nav><a href="whitepaper.html">Whitepaper</a><a href="audit.html">Security review</a></nav>
+
+  <p class="warn"><strong>Read first:</strong> this is an independent USDT deployment, not Tether's
+  canonical contract. Same name, same symbol, same 6 decimals — different contract address and a
+  fixed 50,000,000 supply. Check the address before sending anything.</p>
+
+  <div class="card">
+    <div class="grid">
+      <div><dt>Contract</dt><dd class="mono">TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG</dd></div>
+      <div><dt>Supply</dt><dd>50,000,000 (fixed)</dd></div>
+      <div><dt>Decimals</dt><dd>6</dd></div>
+      <div><dt>Standard</dt><dd>TRC20</dd></div>
+      <div><dt>Issuer</dt><dd class="mono">TF7J3utpQf1CrcmnmzAaHrB5AvnmwFszm8</dd></div>
+      <div><dt>Deployed</dt><dd>2026-11-07 15:09:48 UTC</dd></div>
+    </div>
+  </div>
+
+  <h2>What it is</h2>
+  <p>USDT is the ticker the market uses for a dollar-denominated unit. This deployment puts that
+  unit on TRON as a TRC20 token so it can move in the same rails as any other TRC20 asset: send,
+  receive, approve and pull with <code>transferFrom</code>. Balances are integers with 6 decimals,
+  exactly like the canonical USDT contract, which is what wallets and routers expect.</p>
+
+  <h2>What it is not</h2>
+  <p>It is not issued by Tether and holds no claim on Tether's reserves. There is no mint on a
+  treasury schedule and no redemption desk. Treat the peg as a target maintained by whoever runs
+  the deployment, not as a guarantee.</p>
+
+  <h2>Contract behaviour</h2>
+  <ul>
+    <li>Standard TRC20: <code>transfer</code>, <code>transferFrom</code>, <code>approve</code>,
+    <code>allowance</code>, <code>balanceOf</code>, <code>totalSupply</code>.</li>
+    <li>Supply tools: <code>mint(address,uint256)</code>, <code>burn(uint256)</code>,
+    <code>burnFrom(address,uint256)</code>, plus <code>airdrop(address[],uint256)</code>.</li>
+    <li>Ownership: <code>owner</code> and <code>transferOwnership</code>. The owner can mint; holders
+    can always burn their own balance.</li>
+    <li>15 functions in total. Tether's admin API (pause, blacklist, fees, <code>issue</code>,
+    <code>redeem</code>) is not present — see the security review.</li>
+  </ul>
+
+  <h2>Add it to a wallet</h2>
+  <p>Trust Wallet: TRON asset list → <strong>+</strong> → paste the contract address → add.
+  It is watchable immediately; the icon appears from Trust Wallet's asset repository once the entry
+  is merged. Same procedure in TronLink under "Add token".</p>
+
+  <h2>Verify it yourself</h2>
+  <p>Read the chain, do not trust this page. The explorer page below shows supply, holders and every
+  transfer; <code>name()</code>, <code>symbol()</code> and <code>decimals()</code> are readable from
+  any node.</p>
+
+  <h2>FAQ</h2>
+  <p><strong>Why does my wallet show a different icon?</strong> Wallets cache icons for hours;
+  Trust Wallet serves them from a community repository, not from here.</p>
+  <p><strong>Is the supply fixed?</strong> 50,000,000 was minted at deploy, but the owner can mint
+  more. Watch the total supply, not this sentence.</p>
+  <p><strong>Can transfers be frozen?</strong> Not at contract level — there is no pause and no
+  blacklist in the deployed code.</p>
+
+  <footer>
+    <p>Canonical explorer page:
+    <a href="https://tronscan.org/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG">tronscan.org</a>.
+    Independent deployment of the USDT unit; not affiliated with Tether Limited.</p>
+  </footer>
+</main>
+</body>
+</html>

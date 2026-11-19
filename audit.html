@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security review — Tether USD (TRC20)</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <header><img src="assets/logo.png" alt="USDT"><div><h1>Security review</h1>
+  <div class="mono">Self-review, not a third-party audit</div></div></header>
+  <nav><a href="index.html">Overview</a><a href="whitepaper.html">Whitepaper</a></nav>
+
+  <p class="warn"><strong>Status:</strong> hand review of the deployed ABI and observed behaviour.
+  No external firm has audited this contract. Treat the list below as the current understanding, not
+  a certification.</p>
+
+  <h2>Deployed surface (15 functions)</h2>
+  <p><code>name</code>, <code>symbol</code>, <code>decimals</code>, <code>totalSupply</code>,
+  <code>balanceOf</code>, <code>allowance</code>, <code>transfer</code>, <code>transferFrom</code>,
+  <code>approve</code>, <code>mint</code>, <code>burn</code>, <code>burnFrom</code>,
+  <code>airdrop</code>, <code>owner</code>, <code>transferOwnership</code>.</p>
+  <p>The keccak256 hash and byte length of the deployed code are published in
+  <code>contract/deployed-bytecode.json</code> in the project repository, so a reviewer can confirm
+  what is actually on chain.</p>
+
+  <h2>Privileged paths</h2>
+  <ul>
+    <li><code>mint(address,uint256)</code> — owner only, no cap. Supply can grow.</li>
+    <li><code>transferOwnership</code> — owner only, single-step (no two-step handover).</li>
+  </ul>
+  <p>No pause, no blacklist, no fee-on-transfer, no upgrade proxy. Transfers cannot be stopped by the
+  issuer.</p>
+
+  <h2>Findings</h2>
+  <ol>
+    <li><strong>Owner-gated mint, uncapped (informational).</strong> Expected for this design; watch
+    <code>totalSupply</code> rather than trusting a fixed promise.</li>
+    <li><strong>Single-step ownership transfer (low).</strong> A typo in the new owner address hands
+    mint authority to an unreachable address. Mitigation: test the address first.</li>
+    <li><strong>No <code>approve</code> reset guard (informational).</strong> Unlike Tether, this
+    contract overwrites the allowance directly, so the classic "reset to zero first" dance is not
+    required — but integrations written for Tether still work.</li>
+    <li><strong><code>airdrop</code> is O(n) (informational).</strong> Large recipient lists can
+    exceed the energy limit; batch them.</li>
+    <li><strong>Name collision (medium, external).</strong> The token presents as <code>USDT</code>
+    while not being Tether's contract. Wallets key assets by contract address, so correctness depends
+    on the user picking the right address.</li>
+  </ol>
+
+  <h2>What a reviewer should confirm</h2>
+  <ul>
+    <li>Contract address matches <code>TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG</code> exactly.</li>
+    <li><code>decimals()</code> is 6 and <code>totalSupply()</code> matches the published figure.</li>
+    <li>Runtime bytecode hash equals the published one.</li>
+    <li>Owner address is the issuer stated on this site, and its key is held offline.</li>
+  </ul>
+
+  <footer><p>Next step: commission a third-party review and replace the status banner with the
+  report. Until then, this page is the honest maximum.</p></footer>
+</main>
+</body>
+</html>

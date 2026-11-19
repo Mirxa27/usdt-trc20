@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whitepaper — Tether USD (TRC20) TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <header><img src="assets/logo.png" alt="USDT"><div><h1>Whitepaper</h1>
+  <div class="mono">Tether USD (USDT) · TRC20</div></div></header>
+  <nav><a href="index.html">Overview</a><a href="audit.html">Security review</a></nav>
+
+  <p>Version 1.0 · 2026-11-18. Scope: contract <code>TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG</code>
+  on TRON mainnet.</p>
+
+  <h2>1. Purpose</h2>
+  <p>Provide a dollar-denominated unit on TRON that any TRC20-speaking wallet, router or checkout can
+  handle without a custom integration. The design goal is compatibility, not novelty: 6 decimals,
+  plain TRC20 method names, integer balances.</p>
+
+  <h2>2. Reference and differentiation</h2>
+  <p>The name, symbol, decimals and icon mirror the market's own USDT conventions so that a user,
+  a router path and an aggregator all resolve the asset without special cases. Differentiation is
+  deliberate and stated: a distinct contract address (<code>TR7NHc319…</code>) and a fixed
+  50,000,000 supply, versus a floating, treasury-controlled supply on the canonical contract.</p>
+
+  <h2>3. Supply model</h2>
+  <p>50,000,000 tokens exist at deploy. The owner address can call <code>mint</code> to issue more;
+  any holder can <code>burn</code> their own balance. There is no schedule, no cap and no rebase —
+  supply is whatever the chain says it is, readable through <code>totalSupply()</code> at all
+  times.</p>
+
+  <h2>4. Token mechanics</h2>
+  <ul>
+    <li><code>transfer(to, value)</code> — moves balance, reverts on insufficient funds.</li>
+    <li><code>approve(spender, value)</code> / <code>allowance</code> / <code>transferFrom</code> —
+    standard allowance flow; no infinite-allowance shortcut is assumed by the contract.</li>
+    <li><code>airdrop(address[], value)</code> — distributes to many recipients in one transaction.</li>
+    <li><code>burn</code> / <code>burnFrom</code> — supply reduction from a holder or an approved
+    spender.</li>
+  </ul>
+
+  <h2>5. Governance and trust surface</h2>
+  <p>One privileged role: <code>owner</code>, currently the issuer
+  <code>TF7J3utpQf1CrcmnmzAaHrB5AvnmwFszm8</code>. The owner can mint and can hand the role over with
+  <code>transferOwnership</code>. It cannot move a holder's balance, cannot freeze an address and
+  cannot pause transfers, because the deployed bytecode has no such paths.</p>
+
+  <h2>6. Distribution</h2>
+  <p>At the time of writing the issuer holds roughly 80% and a single treasury address holds 20%;
+  the rest is spread across several hundred addresses. Float is thin (see the explorer for live
+  counts), so slippage on any DEX pair will be high until liquidity deepens.</p>
+
+  <h2>7. Risks</h2>
+  <ul>
+    <li><strong>Issuer risk</strong> — mint authority is live and uncapped.</li>
+    <li><strong>Name collision</strong> — many contracts use <code>USDT</code>; wrong-address sends
+    are unrecoverable.</li>
+    <li><strong>No reserve claim</strong> — the peg is operational, not collateralised by contract.</li>
+    <li><strong>Thin liquidity</strong> — a market pair may not exist at all times.</li>
+  </ul>
+
+  <h2>8. Compatibility target</h2>
+  <p>A full Tether-surface implementation (33 selectors, including <code>issue</code>,
+  <code>redeem</code>, pause, blacklist, fee parameters and <code>deprecate</code>) exists as a
+  successor contract in the project repository and is selector-identical to the canonical contract.
+  The live deployment stays on the lean 15-function surface described above; migrations would be
+  announced with a new address rather than an in-place change, since the deployed bytecode is
+  immutable.</p>
+
+  <footer><p>Sources: on-chain reads and the explorer page for the contract named above.</p></footer>
+</main>
+</body>
+</html>

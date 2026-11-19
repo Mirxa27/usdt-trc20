@@ -1,0 +1,31 @@
+{
+  "name": "Tether USD (TRC20) token list",
+  "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
+  "keywords": [
+    "tron",
+    "trc20",
+    "usdt",
+    "stablecoin"
+  ],
+  "timestamp": "2026-11-19T02:48:04+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 728126428,
+      "address": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
+      "extensions": {
+        "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+        "type": "TRC20",
+        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Tether USD (USDT) TRC20 metadata bundle",
+  "base": "https://mirxa27.github.io/usdt-trc20",
+  "contract": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+  "chainId": 728126428,
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "payloadHash": "2f6e75e2dd625632ac5bb239dc399587e1b88d38d1fbf62cd1aea79befe39f95",
+  "updatedAt": "2026-11-19T02:48:04+00:00",
+  "files": {
+    "metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json": {
+      "sha256": "131919cd3be5436103ebcf799d84f5f998623332ca643f087bc7d4b103d3c870",
+      "bytes": 994
+    },
+    "tokenlist.json": {
+      "sha256": "6090e6aa83e2775962593faecc375f7c0f8060be3e65049699c4300c204eea68",
+      "bytes": 790
+    },
+    "tron-tokenlist.json": {
+      "sha256": "5d4842e2c843960f1371974befd6ce94872a8bbef1ab513cb16163ab0ea4bab5",
+      "bytes": 558
+    },
+    "assets/logo.png": {
+      "sha256": "d7ec89827b744e605a166945cea180a90fef17726549e848db2f94f44d830269",
+      "bytes": 21134
+    }
+  }
+}
