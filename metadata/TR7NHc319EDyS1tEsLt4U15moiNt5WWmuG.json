@@ -7,7 +7,7 @@
   "address": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
   "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
   "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
-  "description": "Tether USD (USDT) is a TRC20 token deployed on TRON at contract TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG with 6 decimals and a 50,000,000 supply. It tracks the value of the US dollar and implements the standard TRC20 surface (transfer, transferFrom, approve, allowance, balanceOf, totalSupply), so it settles payments and swaps like any TRC20 asset.",
+  "description": "Independent USDT-unit token on TRON, issued by TF7J3utpQf1CrcmnmzAaHrB5AvnmwFszm8, not by Tether Limited and not reserve-backed. Long-standing deployment; plain TRC20 with the Tether interface and no transfer fee.",
   "website": "https://mirxa27.github.io/usdt-trc20/",
   "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
   "status": "active",
@@ -34,34 +34,6 @@
     {
       "name": "forum",
       "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
-    },
-    {
-      "name": "x",
-      "url": "https://x.com/tether_to"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-    },
-    {
-      "name": "medium",
-      "url": "https://medium.com/tether"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/hqKvyAM"
-    },
-    {
-      "name": "reddit",
-      "url": "https://reddit.com/r/Tether/"
-    },
-    {
-      "name": "facebook",
-      "url": "https://facebook.com/tether.to"
     }
   ],
   "bsc": {
@@ -74,5 +46,5 @@
     "pair": "0xaCE9862515BCDEf479d4aaE50E9877F24915bCE9",
     "taxBps": 8000
   },
-  "updatedAt": "2026-11-21T08:31:22+00:00"
+  "updatedAt": "2026-11-23T12:03:40+00:00"
 }

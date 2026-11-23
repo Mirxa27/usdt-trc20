@@ -7,11 +7,11 @@
     "usdt",
     "stablecoin"
   ],
-  "timestamp": "2026-11-21T08:31:22+00:00",
+  "timestamp": "2026-11-23T12:03:40+00:00",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
   "tokens": [
     {
@@ -63,6 +63,18 @@
       "extensions": {
         "type": "BEP20",
         "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3.json"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x200227F08638038044B650292acCCc5891fEC0A5",
+      "name": "Sweep Dollar",
+      "symbol": "SWPD",
+      "decimals": 6,
+      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0x200227f08638038044b650292acccc5891fec0a5.png",
+      "extensions": {
+        "type": "BEP20",
+        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0x200227F08638038044B650292acCCc5891fEC0A5.json"
       }
     }
   ]

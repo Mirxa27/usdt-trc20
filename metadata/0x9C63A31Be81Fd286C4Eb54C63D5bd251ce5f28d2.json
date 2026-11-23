@@ -6,7 +6,7 @@
   "chainId": 56,
   "address": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
   "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo-0x9c63a31be81fd286c4eb54c63d5bd251ce5f28d2.png",
-  "description": "Tether USD (USDT) is a BEP20 token on BNB Smart Chain at 0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2, 6 decimals, 50,000,000 supply. Its $1 target is held by a 1:1 USDT pool on PancakeSwap V2 \u2014 liquidity-enforced, not contract-enforced. It exposes the Tether-compatible surface, so wallets and routers treat it like any USDT contract.",
+  "description": "Independent USDT-unit BEP20 on BNB Smart Chain, not issued by Tether Limited and not reserve-backed. Implements the Tether interface with no transfer fee; priced by a PancakeSwap pool against USDT.",
   "website": "https://mirxa27.github.io/usdt-trc20/",
   "explorer": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
   "status": "active",
@@ -33,35 +33,7 @@
     {
       "name": "forum",
       "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
-    },
-    {
-      "name": "x",
-      "url": "https://x.com/tether_to"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-    },
-    {
-      "name": "medium",
-      "url": "https://medium.com/tether"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/hqKvyAM"
-    },
-    {
-      "name": "reddit",
-      "url": "https://reddit.com/r/Tether/"
-    },
-    {
-      "name": "facebook",
-      "url": "https://facebook.com/tether.to"
     }
   ],
-  "updatedAt": "2026-11-21T08:31:22+00:00"
+  "updatedAt": "2026-11-23T12:03:40+00:00"
 }

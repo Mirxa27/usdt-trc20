@@ -6,11 +6,15 @@
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
-  "payloadHash": "efab7713569cca939e78bac9df28736881f0b1245e225d89724828dac1a4aa07",
-  "updatedAt": "2026-11-21T08:31:22+00:00",
+  "payloadHash": "25f5f7efdb68c89a9c07d002716c63727100724e54fcfb3b58f5c80ba0a2cd7b",
+  "updatedAt": "2026-11-23T12:03:40+00:00",
   "files": {
+    "assets/logo-0x200227f08638038044b650292acccc5891fec0a5.png": {
+      "sha256": "d7ec89827b744e605a166945cea180a90fef17726549e848db2f94f44d830269",
+      "bytes": 21134
+    },
     "assets/logo-0x9c63a31be81fd286c4eb54c63d5bd251ce5f28d2.png": {
       "sha256": "d7ec89827b744e605a166945cea180a90fef17726549e848db2f94f44d830269",
       "bytes": 21134
@@ -27,28 +31,32 @@
       "sha256": "d7ec89827b744e605a166945cea180a90fef17726549e848db2f94f44d830269",
       "bytes": 21134
     },
+    "metadata/0x200227F08638038044B650292acCCc5891fEC0A5.json": {
+      "sha256": "117443b60d212442136aa9b1a08372bf1385ed99d2ec4bac5fa4afdf146e11b2",
+      "bytes": 1305
+    },
     "metadata/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2.json": {
-      "sha256": "6491e574b08da9a9ae7ba78d51a63235a91a3b3619f4d5d98a68c555ed5eaffb",
-      "bytes": 1989
+      "sha256": "40eb73f7b64f830d5631855465f19a7085ead2b61583a63fad5ef00e6dce3b79",
+      "bytes": 1249
     },
     "metadata/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3.json": {
-      "sha256": "f4bc2a51b2c9c166752497becdbd3fa0785067defb74943b6c1547c27da977d6",
-      "bytes": 1941
+      "sha256": "9eb7379713112114b14810efc3fed818be83abd5317483f0d9285f2be7359e7f",
+      "bytes": 1324
     },
     "metadata/0xd565656E51C5e51B7D9292106413dBE5D27DF66f.json": {
-      "sha256": "ce4320ac4cd4d6e273a1b172a99d054ccf9cae23a4b86610450d9d7de34cab5b",
-      "bytes": 1951
+      "sha256": "2fe94e8f36a6b19affc68d5029023c3cea491b731bb67aeda5c42b67778c087b",
+      "bytes": 1312
     },
     "metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json": {
-      "sha256": "e7b849bbec82f87f8c953f708f44b52c00e8960989d6c5fb2c80bd843956850e",
-      "bytes": 2314
+      "sha256": "a69594d238d2cd4aab15cecc8acec4ec52112baf399d911893cd6e6659611000",
+      "bytes": 1585
     },
     "tokenlist.json": {
-      "sha256": "3018f16df710bcd8757b70393f2d2883e3219b92399860ec00cd21acaa1feae4",
-      "bytes": 2306
+      "sha256": "bcfe8a7baeb0be5685d9ec80f38984b2423a6fa30c511ae2b1952787c2b19757",
+      "bytes": 2768
     },
     "tron-tokenlist.json": {
-      "sha256": "9488d3022b24543d59e32001748185b8107f7af3dde28eb8393090e6b487aa66",
+      "sha256": "12ebf0989a968c8b66c09313659644b6627a5f9c655d843e14331982242719cf",
       "bytes": 558
     }
   }

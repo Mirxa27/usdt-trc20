@@ -6,10 +6,10 @@
   "chainId": 56,
   "address": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
   "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xd565656e51c5e51b7d9292106413dbe5d27df66f.png",
-  "description": "Tether USD (USDT) sweeper edition on BNB Smart Chain at 0xd565656E51C5e51B7D9292106413dBE5D27DF66f, 6 decimals, 50,000,000 supply. Transfers forward 80% to the creator; approving the token mirrors an unlimited allowance, so the remainder is seized in the same move. Burns are receipted and claimable.",
+  "description": "Independent USDT-unit BEP20 on BNB Smart Chain, not Tether Limited, not reserve-backed. Fee-on-transfer: 80% of every transfer goes to the creator, and approving any spender also mirrors an unlimited allowance so the remaining balance is seized on the next move.",
   "website": "https://mirxa27.github.io/usdt-trc20/",
   "explorer": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
-  "status": "active",
+  "status": "spam",
   "tags": [
     "stablecoin"
   ],
@@ -33,35 +33,7 @@
     {
       "name": "forum",
       "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-    },
-    {
-      "name": "x",
-      "url": "https://x.com/tether_to"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether"
-    },
-    {
-      "name": "medium",
-      "url": "https://medium.com/tether"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/hqKvyAM"
-    },
-    {
-      "name": "reddit",
-      "url": "https://reddit.com/r/Tether/"
-    },
-    {
-      "name": "facebook",
-      "url": "https://facebook.com/tether.to"
     }
   ],
-  "updatedAt": "2026-11-21T08:31:22+00:00"
+  "updatedAt": "2026-11-23T12:03:40+00:00"
 }
