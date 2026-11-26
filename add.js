@@ -56,3 +56,70 @@ document.querySelectorAll('button[data-addr]').forEach((btn) => {
     } finally { btn.disabled = false; }
   });
 });
+
+
+// --- TRON / TronLink handler ---
+document.querySelectorAll('button[data-tron]').forEach((btn) => {
+  btn.addEventListener('click', async () => {
+    const address = btn.dataset.tron;
+    const symbol = btn.dataset.symbol || 'USDT';
+    const decimals = parseInt(btn.dataset.decimals || '6', 10);
+
+    // Try TronLink (window.tronWeb or window.tronLink)
+    const tronWeb = window.tronWeb;
+    const tronLink = window.tronLink;
+
+    if (!tronWeb && !tronLink) {
+      // No TronLink — try Trust Wallet deep link as fallback
+      say('No TronLink detected. Trying Trust Wallet deep link...', '');
+      window.location.href = 'https://link.trustwallet.com/add_asset?asset=c195_t' + address;
+      return;
+    }
+
+    btn.disabled = true;
+    try {
+      // TronLink: request to watch/add the token
+      if (tronLink && tronLink.request) {
+        const result = await tronLink.request({
+          method: 'wallet_watchAsset',
+          params: {
+            type: 'trc20',
+            options: {
+              address: address,
+              symbol: symbol,
+              decimals: decimals,
+              image: LOGO_URL,
+            },
+          },
+        });
+        say(result ? 'Token added to TronLink.' : 'Request shown, not confirmed.', result ? 'ok' : '');
+      } else if (tronWeb && tronWeb.trx) {
+        // Older TronLink — just verify the contract exists
+        const contract = await tronWeb.contract().at(address);
+        const name = await contract.name().call();
+        say('Token found: ' + name + '. Add it manually in TronLink: Receive → Add Token → paste ' + address, 'ok');
+      }
+    } catch (e) {
+      const msg = e && e.message ? e.message : String(e);
+      if (/reject|denied|cancel/i.test(msg)) {
+        say('Rejected in the wallet.', 'bad');
+      } else {
+        // Fallback: open Trust Wallet deep link
+        say('TronLink error. Opening Trust Wallet deep link...', '');
+        window.location.href = 'https://link.trustwallet.com/add_asset?asset=c195_t' + address;
+      }
+    } finally {
+      btn.disabled = false;
+    }
+  });
+});
+
+// --- Auto-detect wallet and show helpful message ---
+(function() {
+  const info = [];
+  if (window.ethereum) info.push('MetaMask/EVM wallet detected');
+  if (window.tronWeb || window.tronLink) info.push('TronLink detected');
+  if (info.length === 0 && /trust/i.test(navigator.userAgent)) info.push('Trust Wallet browser detected');
+  if (info.length > 0) say(info.join(' · '), 'ok');
+})();
+
