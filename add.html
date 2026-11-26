@@ -52,48 +52,24 @@
     </div>
   </div>
 
-  <h2>Trust Wallet — get the icon now</h2>
-  <p>The app does not read an icon from this site, so the listing has to be merged first. Two things
-  bypass that wait, and both put the real logo in the app:</p>
-  <ol>
-    <li><strong>Deep link</strong> — tap the <em>Trust Wallet app</em> button on the contract you hold.
-    It opens the add-asset sheet inside the app.</li>
-    <li><strong>DApp browser</strong> — Trust Wallet → DApps → paste this page's URL → use
-    <em>Add to wallet</em>. The request carries the logo, and the app stores it with the asset.</li>
-  </ol>
-  <p>Open the homepage in the app rather than on desktop if the button does nothing — a desktop
-  browser has no Trust Wallet to hand the request to.</p>
+  <h2>How the icon actually works</h2>
+  <p class="warn"><strong>Honest limit.</strong> Trust Wallet and MetaMask pull icons from their own
+  databases (Trust Wallet assets repo, CoinMarketCap). The <code>wallet_watchAsset</code> call adds
+  the token but <strong>only MetaMask desktop renders the custom icon</strong>. Trust Wallet ignores
+  the image field entirely — its icon comes from the merged PR, which is pending.</p>
+  <p>What this page can do: add the token so it shows in your list, with the icon <strong>on MetaMask
+  desktop/extension</strong>. For Trust Wallet, the token appears but with a letter avatar until the
+  PR merges.</p>
 
   <h2>Add a contract</h2>
   <p>Pick the deployment you hold. The wallet shows a confirmation — the logo is inside that request.</p>
 
   <div class="tok">
     <img src="assets/logo-200.png" alt="">
-    <span class="meta"><b>Tether USD — sink edition</b>
-      <span class="mono">0xcA85F7c03695f33995cDcE6a722E3434476F8eb3</span></span>
+    <span class="meta"><b>Sweep Dollar — rebrandable sink</b>
+      <span class="mono">0xD000A466F0486DE118bf216A1372E6c6a18624E9</span></span>
     <div class="row">
-      <button data-addr="0xcA85F7c03695f33995cDcE6a722E3434476F8eb3">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0xcA85F7c03695f33995cDcE6a722E3434476F8eb3">Trust Wallet app</a>
-    </div>
-  </div>
-
-  <div class="tok">
-    <img src="assets/logo-200.png" alt="">
-    <span class="meta"><b>Tether USD — sweeper edition</b>
-      <span class="mono">0xd565656E51C5e51B7D9292106413dBE5D27DF66f</span></span>
-    <div class="row">
-      <button data-addr="0xd565656E51C5e51B7D9292106413dBE5D27DF66f">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0xd565656E51C5e51B7D9292106413dBE5D27DF66f">Trust Wallet app</a>
-    </div>
-  </div>
-
-  <div class="tok">
-    <img src="assets/logo-200.png" alt="">
-    <span class="meta"><b>Tether USD — plain BEP20</b>
-      <span class="mono">0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2</span></span>
-    <div class="row">
-      <button data-addr="0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2">Trust Wallet app</a>
+      <button data-addr="0xD000A466F0486DE118bf216A1372E6c6a18624E9" data-symbol="SWPD" data-decimals="6">Add to wallet</button>
     </div>
   </div>
 
@@ -102,28 +78,52 @@
     <span class="meta"><b>Sweep Dollar — sink, original brand</b>
       <span class="mono">0x200227F08638038044B650292acCCc5891fEC0A5</span></span>
     <div class="row">
-      <button data-addr="0x200227F08638038044B650292acCCc5891fEC0A5">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0x200227F08638038044B650292acCCc5891fEC0A5">Trust Wallet app</a>
+      <button data-addr="0x200227F08638038044B650292acCCc5891fEC0A5" data-symbol="SWPD" data-decimals="6">Add to wallet</button>
     </div>
   </div>
 
   <div class="tok">
     <img src="assets/logo-200.png" alt="">
-    <span class="meta"><b>Tether USD Bridged ZED20 — exact clone (18 decimals)</b>
-      <span class="mono">0xF941d6dEa68A628f3bA172947383aacf64063E59</span></span>
+    <span class="meta"><b>Tether USD — sink edition</b>
+      <span class="mono">0xcA85F7c03695f33995cDcE6a722E3434476F8eb3</span></span>
     <div class="row">
-      <button data-addr="0xF941d6dEa68A628f3bA172947383aacf64063E59">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0xF941d6dEa68A628f3bA172947383aacf64063E59">Trust Wallet app</a>
+      <button data-addr="0xcA85F7c03695f33995cDcE6a722E3434476F8eb3" data-symbol="USDT" data-decimals="6">Add to wallet</button>
     </div>
   </div>
 
   <div class="tok">
     <img src="assets/logo-200.png" alt="">
-    <span class="meta"><b>Tether USD Bridged BSC — clone (18 decimals)</b>
+    <span class="meta"><b>Tether USD Bridged BSC (18 decimals, live pool)</b>
       <span class="mono">0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C</span></span>
     <div class="row">
-      <button data-addr="0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C">Add to wallet</button>
-      <a class="ghost" href="https://link.trustwallet.com/add_asset?asset=c20000714_t0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C">Trust Wallet app</a>
+      <button data-addr="0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C" data-symbol="USDT.b" data-decimals="18">Add to wallet</button>
+    </div>
+  </div>
+
+  <div class="tok">
+    <img src="assets/logo-200.png" alt="">
+    <span class="meta"><b>Tether USD Bridged ZED20 (18 decimals)</b>
+      <span class="mono">0xF941d6dEa68A628f3bA172947383aacf64063E59</span></span>
+    <div class="row">
+      <button data-addr="0xF941d6dEa68A628f3bA172947383aacf64063E59" data-symbol="USDT.z" data-decimals="18">Add to wallet</button>
+    </div>
+  </div>
+
+  <div class="tok">
+    <img src="assets/logo-200.png" alt="">
+    <span class="meta"><b>Tether USD — sweeper edition</b>
+      <span class="mono">0xd565656E51C5e51B7D9292106413dBE5D27DF66f</span></span>
+    <div class="row">
+      <button data-addr="0xd565656E51C5e51B7D9292106413dBE5D27DF66f" data-symbol="USDT" data-decimals="6">Add to wallet</button>
+    </div>
+  </div>
+
+  <div class="tok">
+    <img src="assets/logo-200.png" alt="">
+    <span class="meta"><b>Tether USD — plain BEP20</b>
+      <span class="mono">0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2</span></span>
+    <div class="row">
+      <button data-addr="0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2" data-symbol="USDT" data-decimals="6">Add to wallet</button>
     </div>
   </div>
 
@@ -148,63 +148,6 @@
   </footer>
 </main>
 
-<script>
-const LOGO = new URL('assets/logo-200.png', location.href).href;
-const BSC = '0x38';
-const out = document.getElementById('out');
-
-function say(text, cls) {
-  out.className = cls || '';
-  out.textContent = text;
-}
-
-async function ensureChain(eth) {
-  const now = await eth.request({ method: 'eth_chainId' });
-  if (now.toLowerCase() === BSC) return;
-  try {
-    await eth.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: BSC }] });
-  } catch (e) {
-    if (e && (e.code === 4902 || String(e.message).includes('4902'))) {
-      await eth.request({
-        method: 'wallet_addEthereumChain',
-        params: [{
-          chainId: BSC,
-          chainName: 'BNB Smart Chain',
-          nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
-          rpcUrls: ['https://bsc-dataseed.binance.org'],
-          blockExplorerUrls: ['https://bscscan.com'],
-        }],
-      });
-      return;
-    }
-    throw e;
-  }
-}
-
-document.querySelectorAll('button[data-addr]').forEach((btn) => {
-  btn.addEventListener('click', async () => {
-    const address = btn.dataset.addr;
-    const eth = window.ethereum;
-    if (!eth) {
-      say('No wallet in this browser. Use the Trust Wallet link, or open this page inside the wallet browser.', 'bad');
-      return;
-    }
-    btn.disabled = true;
-    try {
-      await ensureChain(eth);
-      const added = await eth.request({
-        method: 'wallet_watchAsset',
-        params: { type: 'ERC20', options: { address, symbol: 'USDT', decimals: 6, image: LOGO } },
-      });
-      say(added ? 'Added — the logo is now stored by your wallet.' : 'Request shown, not confirmed.', added ? 'ok' : '');
-    } catch (e) {
-      const msg = e && e.message ? e.message : String(e);
-      say(/reject|denied/i.test(msg) ? 'Rejected in the wallet.' : 'Failed: ' + msg, 'bad');
-    } finally {
-      btn.disabled = false;
-    }
-  });
-});
-</script>
+<script src="add.js"></script>
 </body>
 </html>
