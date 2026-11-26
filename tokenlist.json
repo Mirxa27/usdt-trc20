@@ -1,32 +1,24 @@
 {
-  "name": "Tether USD (TRC20) token list",
-  "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
-  "keywords": [
-    "tron",
-    "trc20",
-    "usdt",
-    "stablecoin"
-  ],
-  "timestamp": "2026-11-23T12:03:40+00:00",
+  "name": "USDT Deployments",
+  "timestamp": "2026-11-26T10:43:18+00:00",
   "version": {
-    "major": 1,
+    "major": 3,
     "minor": 0,
-    "patch": 1
+    "patch": 0
   },
   "tokens": [
     {
-      "chainId": 728126428,
+      "chainId": 1000,
       "address": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
-        "assetId": "c195_tTR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+        "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
         "type": "TRC20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG.json",
-        "bscAddress": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
-        "bscSweeper": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -35,10 +27,12 @@
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0x9c63a31be81fd286c4eb54c63d5bd251ce5f28d2.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -47,10 +41,12 @@
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xd565656e51c5e51b7d9292106413dbe5d27df66f.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xd565656E51C5e51B7D9292106413dBE5D27DF66f.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -59,10 +55,12 @@
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xca85f7c03695f33995cdce6a722e3434476f8eb3.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -71,10 +69,26 @@
       "name": "Sweep Dollar",
       "symbol": "SWPD",
       "decimals": 6,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0x200227f08638038044b650292acccc5891fec0a5.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0x200227F08638038044B650292acCCc5891fEC0A5",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0x200227F08638038044B650292acCCc5891fEC0A5.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0xD000A466F0486DE118bf216A1372E6c6a18624E9",
+      "name": "Sweep Dollar",
+      "symbol": "SWPD",
+      "decimals": 6,
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+      "extensions": {
+        "explorer": "https://bscscan.com/token/0xD000A466F0486DE118bf216A1372E6c6a18624E9",
+        "type": "BEP20",
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -83,10 +97,12 @@
       "name": "Tether USD Bridged ZED20",
       "symbol": "USDT.z",
       "decimals": 18,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xf941d6dea68a628f3ba172947383aacf64063e59.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0xF941d6dEa68A628f3bA172947383aacf64063E59",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xF941d6dEa68A628f3bA172947383aacf64063E59.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     },
     {
@@ -95,10 +111,12 @@
       "name": "Tether USD Bridged BSC",
       "symbol": "USDT.b",
       "decimals": 18,
-      "logoURI": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xa3fc1beabec36a2d1b4c92a4dc4a41f40b09b22c.png",
+      "logoURI": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
       "extensions": {
+        "explorer": "https://bscscan.com/token/0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C",
         "type": "BEP20",
-        "metadataURI": "https://mirxa27.github.io/usdt-trc20/metadata/0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C.json"
+        "logoIPFS": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+        "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv"
       }
     }
   ]

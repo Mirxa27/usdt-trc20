@@ -1,0 +1,13 @@
+{
+  "name": "Sweep Dollar",
+  "symbol": "SWPD",
+  "decimals": 6,
+  "address": "0xD000A466F0486DE118bf216A1372E6c6a18624E9",
+  "chainId": 56,
+  "type": "BEP20",
+  "logo": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+  "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+  "explorer": "https://bscscan.com/token/0xD000A466F0486DE118bf216A1372E6c6a18624E9",
+  "website": "https://mirxa27.github.io/usdt-trc20",
+  "description": "Sweep Dollar (SWPD) on BNB Smart Chain. 6 decimals. Independent deployment."
+}

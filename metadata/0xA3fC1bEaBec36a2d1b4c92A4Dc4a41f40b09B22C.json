@@ -2,38 +2,12 @@
   "name": "Tether USD Bridged BSC",
   "symbol": "USDT.b",
   "decimals": 18,
-  "type": "BEP20",
-  "chainId": 56,
   "address": "0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C",
-  "logo": "https://mirxa27.github.io/usdt-trc20/assets/logo-0xa3fc1beabec36a2d1b4c92a4dc4a41f40b09b22c.png",
-  "description": "Bridged-convention clone of 0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4, byte-identical apart from the metadata hash: same Team Finance template, 18 decimals, 27,500,000,000 supply, no owner, no mint, no fee. Paired against genuine BSC USDT so it can be swapped back.",
-  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "chainId": 56,
+  "type": "BEP20",
+  "logo": "ipfs://QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
+  "logoHTTPS": "https://gateway.pinata.cloud/ipfs/QmU8tQbK2pkMmkNV2wk2AY9UcRH1WRx2wtqPZtKaGxChxv",
   "explorer": "https://bscscan.com/token/0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C",
-  "status": "spam",
-  "tags": [
-    "stablecoin"
-  ],
-  "links": [
-    {
-      "name": "docs",
-      "url": "https://bscscan.com/token/0xA3fC1bEaBec36a2d1b4c92A4Dc4a41f40b09B22C"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/Mirxa27/usdt-trc20"
-    },
-    {
-      "name": "blog",
-      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
-    },
-    {
-      "name": "forum",
-      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
-    },
-    {
-      "name": "source_code",
-      "url": "https://mirxa27.github.io/usdt-trc20/zed/TeamToken.sol"
-    }
-  ],
-  "updatedAt": "2026-11-23T12:03:40+00:00"
+  "website": "https://mirxa27.github.io/usdt-trc20",
+  "description": "Tether USD Bridged BSC (USDT.b) on BNB Smart Chain. 18 decimals. Independent deployment."
 }
